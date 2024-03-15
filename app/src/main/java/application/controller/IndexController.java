@@ -9,7 +9,7 @@ public class IndexController {
     @RequestMapping("/")
     public String index(Model ui
             @RequestParam("nome") String n){
-        ui.addAttribute("msg", "Olá Spring!!!");
+        ui.addAttribute("msg", "Olá" + n + "!!!");
         return "/WEB-INF/home.jsp";
     }
 
